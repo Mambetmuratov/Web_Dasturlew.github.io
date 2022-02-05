@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'oswald-regular';
+    src: url('fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'oswald-semibold';
+    src: url('fonts/Oswald-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'oswald-bold';
+    src: url('fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+:root {
+    --bg-tour: crimson;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--bg-tour);
+    padding: 15px 0;
+}
+
+header .header_top,
+header .header_top nav ul,
+.section_cards,
+.amazing {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .header_top img.logo {
+    height: 60px;
+}
+
+header .header_top nav ul li {
+    margin-left: 50px;
+}
+
+header .header_top nav ul li a {
+    text-decoration: none;
+    font-family: 'oswald-regular';
+    color: #fff;
+    text-transform: uppercase;
+    font-size: large;
+    font-size: 18px;
+}
+
+header .header_top nav ul li a:hover,
+header .header_top nav ul li a.active {
+    color: #000;
+}
+
+
+/*  here bolimi */
+
+.hero_section {
+    height: 550px;
+    background-repeat: no-repeat;
+    background-image: url('images/here.png');
+    margin-top: 90px;
+    background-size: cover;
+}
+
+.color {
+    background-color: #222222;
+}
+
+.hero_section .hero_title {
+    padding-top: 200px;
+    font-family: 'oswald-regular';
+    color: #fff;
+    font-size: 75px;
+    font-weight: 400;
+}
+
+.hero_section .hero_description {
+    padding-top: 15px;
+    color: #fff;
+    font-family: 'montserrat';
+    font-size: 25px;
+    width: 50%;
+}
+
+.hero_section .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    border: 2px solid var(--bg-tour);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    font-family: 'oswald-regular';
+    text-decoration: none;
+}
+
+.hero_section .cta:hover {
+    color: white;
+    background-color: var(--bg-tour);
+}
+
+
+/*Dance_tour*/
+
+.Dance_tour {
+    background-color: var(--bg-tour);
+    padding: 50px 0 80px 0;
+    text-align: center;
+}
+
+.secyion_title {
+    color: #fff;
+    font-family: 'oswald-semibold';
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.section_description,
+.cart_title {
+    width: 85%;
+    color: #fff;
+    font-family: 'montserrat';
+    font-weight: 50;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 30px 0;
+    padding-left: 15%;
+}
+
+.section_cards {
+    justify-content: space-around;
+}
+
+.section_cards .card_1 {
+    width: 30%;
+    justify-content: space-evenly;
+    background-color: #222222;
+    color: #fff;
+}
+
+.section_cards .card_1 .card_image img {
+    width: 100%;
+}
+
+.card_desciption {
+    color: #fff;
+    font-family: 'montserrat';
+    font-weight: 50;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section_cards .card_1 .card_imagem img {
+    margin-top: 25px;
+    width: 30%;
+}
+
+
+/*Pricing*/
+
+.Pricing {
+    background-color: #222222;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.section_cards .card_2 {
+    width: 30%;
+    justify-content: space-evenly;
+    background-color: crimson;
+    color: #fff;
+    padding-top: 25px;
+    border-radius: 10px;
+}
+
+.Pricing .cta2 {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    border: 4px solid #222222;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition: .3s ease background-color;
+    font-family: 'oswald-regular';
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.Pricing .cta2:hover {
+    color: gold;
+    background-color: #222222;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*amazing code*/
+
+.amazing {
+    margin: 0 auto;
+}
+
+.amazing .col-8 {
+    margin-right: 60px;
+    width: 55%;
+}
+
+.amazing .col-4 {
+    width: 100%;
+}
+
+.amazing .col-8 img {
+    width: 100%;
+}
+
+.amazing .cta2 {
+    display: inline-block;
+    padding: 10px 60px;
+    color: white;
+    border: 4px solid #222222;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition: .3s ease background-color;
+    font-family: 'oswald-regular';
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.col-4 .section_description {
+    width: 90%;
+    margin-left: -60px;
+}
+
+.col-4 .register {
+    margin-left: 35px;
+}
+
+.col-4 .secyion_title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.amazing .cta2:hover {
+    color: white;
+    background-color: #222222;
+}
+
+
+/*footer */
+
+#footer_container {
+    width: 100%;
+    min-height: 88px;
+    background-color: #39394d;
+}
+
+#footer-new {
+    color: #666;
+    margin: 0 auto;
+    position: relative;
+}
+
+#footer-new>.footer-body {
+    height: 200px;
+    width: inherit;
+    margin: 0 auto;
+    display: table;
+    font-size: 14px;
+}
+
+#footer-new>.footer-body>.ft-nav {
+    display: table-row;
+}
+
+#footer-new>.footer-body>.ft-nav>div {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 50px;
+}
+
+#footer-new .ft-about {
+    width: 190px;
+}
+
+#footer-new .ft-aboutt {
+    width: 300px;
+}
+
+#footer-new>.footer-body>.ft-nav .h4 {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 30px 0 12px 0;
+}
+
+#footer-new ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-family: 'montserrat';
+}
